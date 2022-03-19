@@ -45,7 +45,17 @@ price: price
 </script>
     </div>  
 </div>
-
+<div class="zadanie3">
+    <h2>Косинус</h2>
+    <input type="number" placeholder="Введите х" id="x">
+    <button id="cos">Высчитать cos(x)</button>
+<script> 
+    let cos = document.querySelector('#cos');
+    let x = document.querySelector('#x');
+    cos.onclick = () => {
+        alert(Math.cos(Number.parseInt(x.value)));
+    }</script>
+</div>  
 
 </body>
 </html>
