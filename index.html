@@ -7,6 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    
+    <h1 id ='h1z1'>Нажмите кнопку для замены текста страницы</h1>
+        <div class="zadanie1"> 
+        <button id="btm1">Заменить текст </button>
+        <script>  // скрипт замены текста
+            let changeText = document.querySelector('#btm1');
+                let text = document.querySelector('#h1z1');
+                let str_ = "Текст поменялся";
+                changeText.onclick = () => {
+                    text.innerHTML = str_;
+                } 
+         </script>
 </body>
 </html>
