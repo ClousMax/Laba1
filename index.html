@@ -18,5 +18,34 @@
                     text.innerHTML = str_;
                 } 
          </script>
+</div>
+<div class="zadanie2">
+    <label for="model">Модель </label>
+    <input type="text"id="model">
+    <label for="developer">Производитель </label>
+    <input type="text" id="developer"> 
+    
+    <label for="price">Цена</label>
+    <input type="text" id="price">
+    <button id="create">Создать</button>
+<script>
+
+ let create = document.querySelector('#create');
+ create.onclick = () => {
+    let model = document.querySelector('#model').value;
+    let developer = document.querySelector('#developer').value;
+    let price = document.querySelector('#price').value;
+    let computer = {
+model: model,
+developer: developer,
+price: price
+}
+    alert(`Компьютер ${computer.model}, производителя  ${computer.developer}, цена= ${computer.price}`);
+ }
+</script>
+    </div>  
+</div>
+
+
 </body>
 </html>
