@@ -11,3 +11,7 @@
     flex-direction: column;
     width: 15%;
 }
+
+body {
+    color:  red;
+}
